@@ -1,0 +1,376 @@
+<form autocomplete="off" novalidate="novalidate" class="or clearfix" id="ANC_Registration_Pakistan">
+  <!--This form was created by transforming a OpenRosa-flavored (X)Form using an XSLT sheet created by Enketo LLC.-->
+  <section class="form-logo">
+    
+  </section>
+  <h3 id="form-title">
+    ANC Registration
+  </h3>
+  
+  
+  <label class="question non-select ">
+    <span lang="" class="question-label active">
+      Registration date
+    </span>
+    <span class="required">
+      *
+    </span>
+    <input autocomplete="off" type="date" name="/ANC_Registration_Pakistan/reg_date" required="required" data-constraint=".&lt;= /ANC_Registration_Pakistan/today " data-type-xml="date"/>
+  </label>
+  <label class="question non-select ">
+    <span lang="" class="question-label active">
+      ANC number:
+    </span>
+    <span class="required">
+      *
+    </span>
+    <input autocomplete="off" type="number" name="/ANC_Registration_Pakistan/anc_number" required="required" data-constraint=".&gt; 0" data-type-xml="int"/>
+  </label>
+  <label class="question non-select ">
+    <span lang="" class="question-label active">
+      Healthcare Provider name:
+    </span>
+    <input autocomplete="off" type="text" name="/ANC_Registration_Pakistan/healthcare_provider_name" data-type-xml="string"/>
+  </label>
+  <label class="question non-select ">
+    <span lang="" class="question-label active">
+      Healthcare Provider phone number:
+    </span>
+    <input autocomplete="off" type="number" name="/ANC_Registration_Pakistan/healthcare_provider_phone_number" data-constraint=".&gt; 999999999 and .&lt; 10000000000" data-type-xml="int"/>
+  </label>
+  <label class="question non-select ">
+    <span lang="" class="question-label active">
+      LMP:
+    </span>
+    <span class="required">
+      *
+    </span>
+    <input autocomplete="off" type="date" name="/ANC_Registration_Pakistan/lmp_date" required="required" data-constraint=".&lt;= /ANC_Registration_Pakistan/today " data-type-xml="date"/>
+  </label>
+  <fieldset class="question ">
+    <fieldset>
+      <legend>
+        <span lang="" class="question-label active">
+          EDD: 
+          <span class="or-output" data-value=" /ANC_Registration_Pakistan/edd_formatted ">
+          </span>
+        </span>
+      </legend>
+      <div class="option-wrapper">
+        <label>
+          <input value="OK" type="radio" name="/ANC_Registration_Pakistan/edd_note" data-type-xml="string"/>
+          <span class="option-label active" lang="">
+            OK
+          </span>
+        </label>
+      </div>
+    </fieldset>
+  </fieldset>
+  <fieldset class="question ">
+    <fieldset>
+      <legend>
+        <span lang="" class="question-label active">
+          Linked facility for delivery?
+        </span>
+      </legend>
+      <div class="option-wrapper">
+        <label class="">
+          <input autocomplete="off" type="radio" name="/ANC_Registration_Pakistan/linked_facility_delivery" data-name="/ANC_Registration_Pakistan/linked_facility_delivery" value="maternity_home" data-type-xml="select1"/>
+          <span lang="" class="option-label active">
+            Maternity Home
+          </span>
+        </label>
+        <label class="">
+          <input autocomplete="off" type="radio" name="/ANC_Registration_Pakistan/linked_facility_delivery" data-name="/ANC_Registration_Pakistan/linked_facility_delivery" value="civil_hospital" data-type-xml="select1"/>
+          <span lang="" class="option-label active">
+            Civil Hospital
+          </span>
+        </label>
+        <label class="">
+          <input autocomplete="off" type="radio" name="/ANC_Registration_Pakistan/linked_facility_delivery" data-name="/ANC_Registration_Pakistan/linked_facility_delivery" value="rural_health_center" data-type-xml="select1"/>
+          <span lang="" class="option-label active">
+            Rural Health Center
+          </span>
+        </label>
+        <label class="">
+          <input autocomplete="off" type="radio" name="/ANC_Registration_Pakistan/linked_facility_delivery" data-name="/ANC_Registration_Pakistan/linked_facility_delivery" value="town_hospital" data-type-xml="select1"/>
+          <span lang="" class="option-label active">
+            Town Hospital
+          </span>
+        </label>
+        <label class="">
+          <input autocomplete="off" type="radio" name="/ANC_Registration_Pakistan/linked_facility_delivery" data-name="/ANC_Registration_Pakistan/linked_facility_delivery" value="jpmc" data-type-xml="select1"/>
+          <span lang="" class="option-label active">
+            JPMC
+          </span>
+        </label>
+        <label class="">
+          <input autocomplete="off" type="radio" name="/ANC_Registration_Pakistan/linked_facility_delivery" data-name="/ANC_Registration_Pakistan/linked_facility_delivery" value="other_district_hospital" data-type-xml="select1"/>
+          <span lang="" class="option-label active">
+            Other District Hospital
+          </span>
+        </label>
+        <label class="">
+          <input autocomplete="off" type="radio" name="/ANC_Registration_Pakistan/linked_facility_delivery" data-name="/ANC_Registration_Pakistan/linked_facility_delivery" value="private" data-type-xml="select1"/>
+          <span lang="" class="option-label active">
+            Private
+          </span>
+        </label>
+      </div>
+    </fieldset>
+  </fieldset>
+  <label class="question or-branch pre-init non-select ">
+    <span lang="" class="question-label active">
+      Name of facility?
+    </span>
+    <input autocomplete="off" type="text" name="/ANC_Registration_Pakistan/name_facility" data-relevant=" /ANC_Registration_Pakistan/linked_facility_delivery  != ''" data-type-xml="string"/>
+  </label>
+  <fieldset class="question or-branch pre-init ">
+    <fieldset>
+      <legend>
+        <span lang="" class="question-label active">
+          Had complications in any previous pregnancy?
+        </span>
+      </legend>
+      <div class="option-wrapper">
+        <label class="">
+          <input autocomplete="off" type="checkbox" name="/ANC_Registration_Pakistan/complication" value="Prev_Preg_Complication:_APH" data-relevant=" /ANC_Registration_Pakistan/case_num_pregnancies  &gt; 0" data-type-xml="select"/>
+          <span lang="" class="option-label active">
+            Antepartum Haemorrhage
+          </span>
+        </label>
+        <label class="">
+          <input autocomplete="off" type="checkbox" name="/ANC_Registration_Pakistan/complication" value="Prev_Preg_Complication:_PIH" data-relevant=" /ANC_Registration_Pakistan/case_num_pregnancies  &gt; 0" data-type-xml="select"/>
+          <span lang="" class="option-label active">
+            Pregnancy-Induced Hypertension
+          </span>
+        </label>
+        <label class="">
+          <input autocomplete="off" type="checkbox" name="/ANC_Registration_Pakistan/complication" value="Prev_Preg_Complication:_Preeclampsia_Eclampsia" data-relevant=" /ANC_Registration_Pakistan/case_num_pregnancies  &gt; 0" data-type-xml="select"/>
+          <span lang="" class="option-label active">
+            Pre-eclampsia / Eclampsia
+          </span>
+        </label>
+        <label class="">
+          <input autocomplete="off" type="checkbox" name="/ANC_Registration_Pakistan/complication" value="Prev_Preg_Complication:_Pregnancy_with_Tumors" data-relevant=" /ANC_Registration_Pakistan/case_num_pregnancies  &gt; 0" data-type-xml="select"/>
+          <span lang="" class="option-label active">
+            Pregnancy with tumors
+          </span>
+        </label>
+        <label class="">
+          <input autocomplete="off" type="checkbox" name="/ANC_Registration_Pakistan/complication" value="Prev_Preg_Complication:_Prolonged_Obstructed_Labor" data-relevant=" /ANC_Registration_Pakistan/case_num_pregnancies  &gt; 0" data-type-xml="select"/>
+          <span lang="" class="option-label active">
+            Prolonged / Obstructed labor
+          </span>
+        </label>
+        <label class="">
+          <input autocomplete="off" type="checkbox" name="/ANC_Registration_Pakistan/complication" value="Prev_Preg_Complication:_Intrauterine_Growth_Retardation" data-relevant=" /ANC_Registration_Pakistan/case_num_pregnancies  &gt; 0" data-type-xml="select"/>
+          <span lang="" class="option-label active">
+            Intrauterine Growth Retardation
+          </span>
+        </label>
+        <label class="">
+          <input autocomplete="off" type="checkbox" name="/ANC_Registration_Pakistan/complication" value="Prev_Preg_Complication:_PPH" data-relevant=" /ANC_Registration_Pakistan/case_num_pregnancies  &gt; 0" data-type-xml="select"/>
+          <span lang="" class="option-label active">
+            Postpartum Haemorrhage
+          </span>
+        </label>
+        <label class="">
+          <input autocomplete="off" type="checkbox" name="/ANC_Registration_Pakistan/complication" value="Prev_Preg_Complication:_Cesarean" data-relevant=" /ANC_Registration_Pakistan/case_num_pregnancies  &gt; 0" data-type-xml="select"/>
+          <span lang="" class="option-label active">
+            Cesarean
+          </span>
+        </label>
+        <label class="">
+          <input autocomplete="off" type="checkbox" name="/ANC_Registration_Pakistan/complication" value="Prev_Preg_Complication:_Still_Birth" data-relevant=" /ANC_Registration_Pakistan/case_num_pregnancies  &gt; 0" data-type-xml="select"/>
+          <span lang="" class="option-label active">
+            Still birth
+          </span>
+        </label>
+        <label class="">
+          <input autocomplete="off" type="checkbox" name="/ANC_Registration_Pakistan/complication" value="Prev_Preg_Complication:_Spontaneous_Abortion" data-relevant=" /ANC_Registration_Pakistan/case_num_pregnancies  &gt; 0" data-type-xml="select"/>
+          <span lang="" class="option-label active">
+            Spontaneous abortion
+          </span>
+        </label>
+      </div>
+    </fieldset>
+  </fieldset>
+  <fieldset class="question ">
+    <fieldset>
+      <legend>
+        <span lang="" class="question-label active">
+          Does woman have any of the following medical conditions?
+        </span>
+      </legend>
+      <div class="option-wrapper">
+        <label class="">
+          <input autocomplete="off" type="checkbox" name="/ANC_Registration_Pakistan/medical_histories" value="Medical_History:_TB" data-type-xml="select"/>
+          <span lang="" class="option-label active">
+            TB
+          </span>
+        </label>
+        <label class="">
+          <input autocomplete="off" type="checkbox" name="/ANC_Registration_Pakistan/medical_histories" value="Medical_History:_Hypertension" data-type-xml="select"/>
+          <span lang="" class="option-label active">
+            Hypertension
+          </span>
+        </label>
+        <label class="">
+          <input autocomplete="off" type="checkbox" name="/ANC_Registration_Pakistan/medical_histories" value="Medical_History:_Heart_Related_Diseases" data-type-xml="select"/>
+          <span lang="" class="option-label active">
+            Heart-related diseases
+          </span>
+        </label>
+        <label class="">
+          <input autocomplete="off" type="checkbox" name="/ANC_Registration_Pakistan/medical_histories" value="Medical_History:_Diabetes" data-type-xml="select"/>
+          <span lang="" class="option-label active">
+            Diabetes
+          </span>
+        </label>
+      </div>
+    </fieldset>
+  </fieldset>
+  <label class="question or-appearance-minimal ">
+    <span lang="" class="question-label active">
+      Woman's blood group?
+    </span>
+    <select name="/ANC_Registration_Pakistan/w_blood_group" data-name="/ANC_Registration_Pakistan/w_blood_group" data-type-xml="select1">
+      <option value="">
+        ...
+      </option>
+      <option value="a_positive">
+        A+
+      </option>
+      <option value="a_negative">
+        A-
+      </option>
+      <option value="b_positive">
+        B+
+      </option>
+      <option value="b_negative">
+        B-
+      </option>
+      <option value="ab_positive">
+        AB+
+      </option>
+      <option value="ab_negative">
+        AB-
+      </option>
+      <option value="o_positive">
+        O+
+      </option>
+      <option value="o_negative">
+        O-
+      </option>
+    </select>
+    <span class="or-option-translations" style="display:none;">
+    </span>
+  </label>
+  <label class="question non-select ">
+    <span lang="" class="question-label active">
+      Height (in cms)
+    </span>
+    <input autocomplete="off" type="number" name="/ANC_Registration_Pakistan/height" data-type-xml="decimal" step="any"/>
+  </label>
+  <label class="question non-select ">
+    <span lang="" class="question-label active">
+      Weight at start of pregnancy (in kgs)
+    </span>
+    <input autocomplete="off" type="number" name="/ANC_Registration_Pakistan/weight_startofpregnancy" data-type-xml="decimal" step="any"/>
+  </label>
+  <fieldset class="question or-branch pre-init ">
+    <fieldset>
+      <legend>
+        <span lang="" class="question-label active">
+          <span class="or-output" data-value=" /ANC_Registration_Pakistan/woman_name ">
+          </span>
+          is at risk because of: 
+          <span class="or-output" data-value=" /ANC_Registration_Pakistan/high_risk_reason ">
+          </span>
+        </span>
+      </legend>
+      <div class="option-wrapper">
+        <label>
+          <input value="OK" type="radio" name="/ANC_Registration_Pakistan/high_risk_note" data-relevant=" /ANC_Registration_Pakistan/is_high_risk1  = 'yes'" data-type-xml="string"/>
+          <span class="option-label active" lang="">
+            OK
+          </span>
+        </label>
+      </div>
+    </fieldset>
+  </fieldset>
+  <fieldset class="question ">
+    <fieldset>
+      <legend>
+        <span lang="" class="question-label active">
+          Do you want to mark as HRP?
+        </span>
+      </legend>
+      <div class="option-wrapper">
+        <label class="">
+          <input autocomplete="off" type="radio" name="/ANC_Registration_Pakistan/is_high_risk" data-name="/ANC_Registration_Pakistan/is_high_risk" value="yes" data-type-xml="select1"/>
+          <span lang="" class="option-label active">
+            Yes
+          </span>
+        </label>
+        <label class="">
+          <input autocomplete="off" type="radio" name="/ANC_Registration_Pakistan/is_high_risk" data-name="/ANC_Registration_Pakistan/is_high_risk" value="no" data-type-xml="select1"/>
+          <span lang="" class="option-label active">
+            No
+          </span>
+        </label>
+      </div>
+    </fieldset>
+  </fieldset>
+  
+  <fieldset id="or-preload-items" style="display:none;">
+    <label class="calculation non-select ">
+      <input autocomplete="off" type="hidden" name="/ANC_Registration_Pakistan/today" data-preload="date" data-preload-params="today" data-type-xml="date"/>
+    </label>
+  </fieldset>
+  <fieldset id="or-calculated-items" style="display:none;">
+    <label class="calculation non-select ">
+      <input autocomplete="off" type="hidden" name="/ANC_Registration_Pakistan/woman_name" data-calculate="concat( /ANC_Registration_Pakistan/case_woman_name , ' ')" data-type-xml="string"/>
+    </label>
+    <label class="calculation non-select ">
+      <input autocomplete="off" type="hidden" name="/ANC_Registration_Pakistan/num_pregnancies" data-calculate=" /ANC_Registration_Pakistan/case_num_pregnancies  + 1" data-type-xml="string"/>
+    </label>
+    <label class="calculation non-select ">
+      <input autocomplete="off" type="hidden" name="/ANC_Registration_Pakistan/edd" data-calculate="date( /ANC_Registration_Pakistan/lmp_date +280)" data-type-xml="string"/>
+    </label>
+    <label class="calculation non-select ">
+      <input autocomplete="off" type="hidden" name="/ANC_Registration_Pakistan/edd_formatted" data-calculate="format-date( /ANC_Registration_Pakistan/edd , '%Y-%n-%e')" data-type-xml="string"/>
+    </label>
+    <label class="calculation non-select ">
+      <input autocomplete="off" type="hidden" name="/ANC_Registration_Pakistan/weight_risk" data-calculate="if( /ANC_Registration_Pakistan/weight_startofpregnancy  &lt; 45 or  /ANC_Registration_Pakistan/weight_startofpregnancy  &gt;= 90, 'Weight', '')" data-type-xml="string"/>
+    </label>
+    <label class="calculation non-select ">
+      <input autocomplete="off" type="hidden" name="/ANC_Registration_Pakistan/height_risk" data-calculate="if( /ANC_Registration_Pakistan/height  &lt;= 145, 'Height', '')" data-type-xml="string"/>
+    </label>
+    <label class="calculation non-select ">
+      <input autocomplete="off" type="hidden" name="/ANC_Registration_Pakistan/is_high_risk_till_delivery" data-calculate="if( /ANC_Registration_Pakistan/case_would_be_high_risk  = 'yes' or  /ANC_Registration_Pakistan/weight_risk  != '' or  /ANC_Registration_Pakistan/height_risk  != '' or  /ANC_Registration_Pakistan/complication  != '', 'yes', 'no')" data-type-xml="string"/>
+    </label>
+    <label class="calculation non-select ">
+      <input autocomplete="off" type="hidden" name="/ANC_Registration_Pakistan/is_high_risk_till_delivery_reason" data-calculate="concat( /ANC_Registration_Pakistan/case_would_be_high_risk_reason , ' ',  /ANC_Registration_Pakistan/weight_risk , ' ',  /ANC_Registration_Pakistan/height_risk , ' ', string( /ANC_Registration_Pakistan/complication ))" data-type-xml="string"/>
+    </label>
+    <label class="calculation non-select ">
+      <input autocomplete="off" type="hidden" name="/ANC_Registration_Pakistan/is_high_risk_till_pnc_close" data-calculate="if( /ANC_Registration_Pakistan/medical_histories  != '', 'yes', 'no')" data-type-xml="string"/>
+    </label>
+    <label class="calculation non-select ">
+      <input autocomplete="off" type="hidden" name="/ANC_Registration_Pakistan/is_high_risk_till_pnc_close_reason" data-calculate="string( /ANC_Registration_Pakistan/medical_histories )" data-type-xml="string"/>
+    </label>
+    <label class="calculation non-select ">
+      <input autocomplete="off" type="hidden" name="/ANC_Registration_Pakistan/is_high_risk1" data-calculate="if( /ANC_Registration_Pakistan/is_high_risk_till_delivery  = 'yes' or  /ANC_Registration_Pakistan/is_high_risk_till_pnc_close  = 'yes', 'yes', 'no')" data-type-xml="string"/>
+    </label>
+    <label class="calculation non-select ">
+      <input autocomplete="off" type="hidden" name="/ANC_Registration_Pakistan/high_risk_reason" data-calculate="concat( /ANC_Registration_Pakistan/is_high_risk_till_delivery_reason , ' ',  /ANC_Registration_Pakistan/is_high_risk_till_pnc_close_reason )" data-type-xml="string"/>
+    </label>
+    <label class="calculation non-select ">
+      <input autocomplete="off" type="hidden" name="/ANC_Registration_Pakistan/meta/instanceID" data-calculate="concat('uuid:', uuid())" data-type-xml="string"/>
+    </label>
+    <label class="calculation non-select ">
+      <input autocomplete="off" type="hidden" name="/ANC_Registration_Pakistan/formhub/uuid" data-calculate="'e1edaa4c72b745538d300ae947fe80ab'" data-type-xml="string"/>
+    </label>
+  </fieldset>
+</form>

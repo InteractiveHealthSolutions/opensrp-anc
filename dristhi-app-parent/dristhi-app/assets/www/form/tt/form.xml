@@ -1,0 +1,33 @@
+<form autocomplete="off" novalidate="novalidate" class="or clearfix" id="TT_Pakistan">
+   <!--This form was created by transforming a OpenRosa-flavored (X)Form using an XSLT sheet created by Enketo LLC.-->
+   <section class="form-logo"> </section>
+   <h3 id="form-title">TT</h3>
+   <fieldset class="question ">
+      <fieldset>
+         <legend><span lang="" class="question-label active">Which TT injection did you give?
+            &#x679;&#x6CC; &#x679;&#x6CC; &#x6A9;&#x627; &#x6A9;&#x648;&#x646;&#x633;&#x627; &#x627;&#x646;&#x62C;&#x6CC;&#x6A9;&#x634;&#x646; &#x62F;&#x6CC;&#x627; &#x6C1;&#x6D2;&#x61F;</span><span class="required">*</span>
+         </legend>
+         <div class="option-wrapper"><label class=""><input autocomplete="off" type="radio" name="/TT_Pakistan/tt_dose" data-name="/TT_Pakistan/tt_dose" value="tt1" required="required" data-type-xml="select1"/><span lang="" class="option-label active">TT1</span></label><label class=""><input autocomplete="off" type="radio" name="/TT_Pakistan/tt_dose" data-name="/TT_Pakistan/tt_dose" value="tt2" required="required" data-type-xml="select1"/><span lang="" class="option-label active">TT2</span></label><label class=""><input autocomplete="off" type="radio" name="/TT_Pakistan/tt_dose" data-name="/TT_Pakistan/tt_dose" value="ttbooster" required="required" data-type-xml="select1"/><span lang="" class="option-label active">TT Booster</span></label></div>
+      </fieldset>
+   </fieldset>
+   <label class="question or-appearance-minimal ">
+      <span lang="" class="question-label active">Place of TT injection?
+      &#x679;&#x6CC; &#x679;&#x6CC; &#x679;&#x6CC;&#x6A9;&#x6C1; &#x62F;&#x6CC;&#x646;&#x6D2; &#x6A9;&#x6CC; &#x62C;&#x6AF;&#x6C1;</span><span class="required">*</span>
+      <select name="/TT_Pakistan/tt_injection_place" data-name="/TT_Pakistan/tt_injection_place" required="required" data-type-xml="select1">
+         <option value="">...</option>
+         <option value="maternity_home">Maternity Home</option>
+         <option value="rural_health_center">Rural Health Center</option>
+         <option value="basic_health_unit">Basic Health Unit</option>
+         <option value="town_hospital">Town hospital</option>
+         <option value="civil_hospital">Civil Hospital</option>
+         <option value="jpmc">JPMC</option>
+         <option value="other_district">Other district hospital</option>
+      </select>
+      <span class="or-option-translations" style="display:none;">
+      </span>
+   </label>
+   <label class="question non-select "><span lang="" class="question-label active">Date of TT injection?
+   &#x679;&#x6CC; &#x679;&#x6CC; &#x679;&#x6CC;&#x6A9;&#x6D2; &#x6A9;&#x6CC; &#x62A;&#x627;&#x631;&#x6CC;&#x62E;</span><span class="required">*</span><input autocomplete="off" type="date" name="/TT_Pakistan/tt_date" required="required" data-constraint=".&lt;= /TT_Pakistan/today " data-type-xml="date"/></label>
+   <fieldset id="or-preload-items" style="display:none;"><label class="calculation non-select "><input autocomplete="off" type="hidden" name="/TT_Pakistan/today" data-preload="date" data-preload-params="today" data-type-xml="date"/></label></fieldset>
+   <fieldset id="or-calculated-items" style="display:none;"><label class="calculation non-select "><input autocomplete="off" type="hidden" name="/TT_Pakistan/meta/instanceID" data-calculate="concat('uuid:', uuid())" data-type-xml="string"/></label><label class="calculation non-select "><input autocomplete="off" type="hidden" name="/TT_Pakistan/formhub/uuid" data-calculate="'31bf2fafb7eb4e97b09da126be4e3588'" data-type-xml="string"/></label></fieldset>
+</form>

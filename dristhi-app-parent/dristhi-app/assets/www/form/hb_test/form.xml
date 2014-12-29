@@ -1,0 +1,48 @@
+<form autocomplete="off" novalidate="novalidate" class="or clearfix" id="Hb_Test_Pakistan">
+   <!--This form was created by transforming a OpenRosa-flavored (X)Form using an XSLT sheet created by Enketo LLC.-->
+   <section class="form-logo"> </section>
+   <h3 id="form-title">Hb Test</h3>
+   <label class="question non-select "><span lang="" class="question-label active">Hb test date? &#x6C1;&#x6CC;&#x645;&#x648;&#x6AF;&#x644;&#x648;&#x628;&#x646; &#x6A9;&#x6D2; &#x679;&#x6CC;&#x633;&#x679; &#x6A9;&#x6CC; &#x62A;&#x627;&#x631;&#x6CC;&#x62E;</span><span class="required">*</span><input autocomplete="off" type="date" name="/Hb_Test_Pakistan/hb_test_date" required="required" data-constraint=".&lt;= /Hb_Test_Pakistan/today " data-type-xml="date"/></label>
+   <fieldset class="question ">
+      <fieldset>
+         <legend><span lang="" class="question-label active">Hb test place?
+            &#x6C1;&#x6CC;&#x645;&#x648;&#x6AF;&#x644;&#x648;&#x628;&#x646; &#x6A9;&#x6D2; &#x679;&#x6CC;&#x633;&#x679; &#x6A9;&#x6CC; &#x62C;&#x6AF;&#x6C1;</span><span class="required">*</span>
+         </legend>
+         <div class="option-wrapper"><label class=""><input autocomplete="off" type="radio" name="/Hb_Test_Pakistan/hb_test_place" data-name="/Hb_Test_Pakistan/hb_test_place" value="maternity_home" required="required" data-type-xml="select1"/><span lang="" class="option-label active">Maternity Home</span></label><label class=""><input autocomplete="off" type="radio" name="/Hb_Test_Pakistan/hb_test_place" data-name="/Hb_Test_Pakistan/hb_test_place" value="rural_health_center" required="required" data-type-xml="select1"/><span lang="" class="option-label active">Rural Health Center</span></label><label class=""><input autocomplete="off" type="radio" name="/Hb_Test_Pakistan/hb_test_place" data-name="/Hb_Test_Pakistan/hb_test_place" value="basic_health_unit" required="required" data-type-xml="select1"/><span lang="" class="option-label active">Basic Health Unit</span></label><label class=""><input autocomplete="off" type="radio" name="/Hb_Test_Pakistan/hb_test_place" data-name="/Hb_Test_Pakistan/hb_test_place" value="town_hospital" required="required" data-type-xml="select1"/><span lang="" class="option-label active">Town hospital</span></label><label class=""><input autocomplete="off" type="radio" name="/Hb_Test_Pakistan/hb_test_place" data-name="/Hb_Test_Pakistan/hb_test_place" value="civil_hospital" required="required" data-type-xml="select1"/><span lang="" class="option-label active">Civil Hospital</span></label><label class=""><input autocomplete="off" type="radio" name="/Hb_Test_Pakistan/hb_test_place" data-name="/Hb_Test_Pakistan/hb_test_place" value="jpmc" required="required" data-type-xml="select1"/><span lang="" class="option-label active">JPMC</span></label><label class=""><input autocomplete="off" type="radio" name="/Hb_Test_Pakistan/hb_test_place" data-name="/Hb_Test_Pakistan/hb_test_place" value="other_district" required="required" data-type-xml="select1"/><span lang="" class="option-label active">Other district hospital</span></label><label class=""><input autocomplete="off" type="radio" name="/Hb_Test_Pakistan/hb_test_place" data-name="/Hb_Test_Pakistan/hb_test_place" value="private" required="required" data-type-xml="select1"/><span lang="" class="option-label active">Private</span></label></div>
+      </fieldset>
+   </fieldset>
+   <label class="question non-select "><span lang="" class="question-label active">Hb level (g/dl) &#x6C1;&#x6CC;&#x645;&#x648;&#x6AF;&#x644;&#x648;&#x628;&#x646; &#x644;&#x6CC;&#x648;&#x644;</span><span class="required">*</span><input autocomplete="off" type="number" name="/Hb_Test_Pakistan/hb_level" required="required" data-constraint=".&gt;0" data-type-xml="decimal" step="any"/></label>
+   <fieldset class="question or-branch pre-init ">
+      <fieldset>
+         <legend><span lang="" class="question-label active">Woman is anaemic! Start her on therapeutic dose of IFA (2 tablets per day). !&#x639;&#x648;&#x631;&#x62A; &#x6A9;&#x648; &#x62E;&#x648;&#x646; &#x6A9;&#x6CC; &#x6A9;&#x645;&#x6CC; &#x6C1;&#x6D2;</span>
+         </legend>
+         <div class="option-wrapper"><label class=""><input autocomplete="off" type="radio" name="/Hb_Test_Pakistan/anaemic_message" data-name="/Hb_Test_Pakistan/anaemic_message" value="yes" data-relevant=" /Hb_Test_Pakistan/hb_level  &gt;= 7 and  /Hb_Test_Pakistan/hb_level  &lt; 11" data-type-xml="select1"/><span lang="" class="option-label active">Yes &#x6C1;&#x627;&#x6BA;</span></label><label class=""><input autocomplete="off" type="radio" name="/Hb_Test_Pakistan/anaemic_message" data-name="/Hb_Test_Pakistan/anaemic_message" value="no" data-relevant=" /Hb_Test_Pakistan/hb_level  &gt;= 7 and  /Hb_Test_Pakistan/hb_level  &lt; 11" data-type-xml="select1"/><span lang="" class="option-label active">No &#x646;&#x6C1;&#x6CC;&#x6BA;</span></label></div>
+      </fieldset>
+   </fieldset>
+   <fieldset class="question or-branch pre-init ">
+      <fieldset>
+         <legend><span lang="" class="question-label active">Woman is severely anaemic! Start her on therapeutic dose of IFA (2 tablets per day) and refer immediately to the MO!</span>
+         </legend>
+         <div class="option-wrapper"><label><input value="OK" type="radio" name="/Hb_Test_Pakistan/severely_anaemic_message" data-relevant=" /Hb_Test_Pakistan/hb_level  &lt; 7" data-type-xml="string"/><span class="option-label active" lang="">OK</span></label></div>
+      </fieldset>
+   </fieldset>
+   <fieldset class="question or-branch pre-init ">
+      <fieldset>
+         <legend><span lang="" class="question-label active">Woman is at risk because of: <span class="or-output" data-value=" /Hb_Test_Pakistan/high_risk_reason ">
+            </span>
+            &#x639;&#x648;&#x631;&#x62A; &#x6A9;&#x648; &#x62E;&#x637;&#x631;&#x6C1; &#x6C1;&#x6D2; &#x6A9;&#x6CC;&#x648;&#x646;&#x6A9;&#x6C1;</span>
+         </legend>
+         <div class="option-wrapper"><label class=""><input autocomplete="off" type="radio" name="/Hb_Test_Pakistan/high_risk_note" data-name="/Hb_Test_Pakistan/high_risk_note" value="yes" data-relevant=" /Hb_Test_Pakistan/is_high_risk1  = 'yes'" data-type-xml="select1"/><span lang="" class="option-label active">Yes &#x6C1;&#x627;&#x6BA;</span></label><label class=""><input autocomplete="off" type="radio" name="/Hb_Test_Pakistan/high_risk_note" data-name="/Hb_Test_Pakistan/high_risk_note" value="no" data-relevant=" /Hb_Test_Pakistan/is_high_risk1  = 'yes'" data-type-xml="select1"/><span lang="" class="option-label active">No &#x646;&#x6C1;&#x6CC;&#x6BA;</span></label></div>
+      </fieldset>
+   </fieldset>
+   <fieldset class="question ">
+      <fieldset>
+         <legend><span lang="" class="question-label active">Do you want to mark as HRP? 
+            &#x6A9;&#x6CC;&#x627; &#x622;&#x67E; &#x627;&#x633;&#x6D2; &#x627;&#x6CC;&#x686; &#x622;&#x631; &#x67E;&#x6CC; &#x6A9;&#x627; &#x62F;&#x631;&#x62C;&#x6C1; &#x62F;&#x6CC;&#x646;&#x627; &#x686;&#x627;&#x6C1;&#x62A;&#x6D2; &#x6C1;&#x6CC;&#x6BA;&#x61F;</span><span class="required">*</span>
+         </legend>
+         <div class="option-wrapper"><label class=""><input autocomplete="off" type="radio" name="/Hb_Test_Pakistan/is_high_risk" data-name="/Hb_Test_Pakistan/is_high_risk" value="yes" required="required" data-type-xml="select1"/><span lang="" class="option-label active">Yes &#x6C1;&#x627;&#x6BA;</span></label><label class=""><input autocomplete="off" type="radio" name="/Hb_Test_Pakistan/is_high_risk" data-name="/Hb_Test_Pakistan/is_high_risk" value="no" required="required" data-type-xml="select1"/><span lang="" class="option-label active">No &#x646;&#x6C1;&#x6CC;&#x6BA;</span></label></div>
+      </fieldset>
+   </fieldset>
+   <fieldset id="or-preload-items" style="display:none;"><label class="calculation non-select "><input autocomplete="off" type="hidden" name="/Hb_Test_Pakistan/today" data-preload="date" data-preload-params="today" data-type-xml="date"/></label></fieldset>
+   <fieldset id="or-calculated-items" style="display:none;"><label class="calculation non-select "><input autocomplete="off" type="hidden" name="/Hb_Test_Pakistan/anaemic_status" data-calculate="if( /Hb_Test_Pakistan/hb_level  &lt; 7, 'Severe_Anaemia', (if( /Hb_Test_Pakistan/hb_level  &gt;= 7 and  /Hb_Test_Pakistan/hb_level  &lt; 11, 'Anaemia', '')))" data-type-xml="string"/></label><label class="calculation non-select "><input autocomplete="off" type="hidden" name="/Hb_Test_Pakistan/is_high_risk1" data-calculate="if( /Hb_Test_Pakistan/case_is_high_risk_till_delivery  = 'yes' or  /Hb_Test_Pakistan/case_is_high_risk_till_pnc_close  = 'yes' or  /Hb_Test_Pakistan/anaemic_status  != '', 'yes', 'no')" data-type-xml="string"/></label><label class="calculation non-select "><input autocomplete="off" type="hidden" name="/Hb_Test_Pakistan/high_risk_reason" data-calculate="concat( /Hb_Test_Pakistan/anaemic_status , ' ',  /Hb_Test_Pakistan/case_is_high_risk_till_delivery_reason , ' ',  /Hb_Test_Pakistan/case_is_high_risk_till_pnc_close_reason )" data-type-xml="string"/></label><label class="calculation non-select "><input autocomplete="off" type="hidden" name="/Hb_Test_Pakistan/meta/instanceID" data-calculate="concat('uuid:', uuid())" data-type-xml="string"/></label><label class="calculation non-select "><input autocomplete="off" type="hidden" name="/Hb_Test_Pakistan/formhub/uuid" data-calculate="'f16cfdedb81a4ccc932fbdd7f72040d5'" data-type-xml="string"/></label></fieldset>
+</form>

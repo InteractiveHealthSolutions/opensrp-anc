@@ -1,0 +1,45 @@
+{
+    "form_data_definition_version": "2",
+    "form": {
+        "bind_type": "mother",
+        "default_bind_path": "/model/instance/ANC_Investigations_Pakistan/",
+        "fields": [
+            {
+                "name": "id",
+                "shouldLoadValue": true
+            },
+            {
+                "name": "testDate",
+                "bind": "/model/instance/ANC_Investigations_Pakistan/test_date"
+            },
+            {
+                "name": "testResultsToEnter",
+                "bind": "/model/instance/ANC_Investigations_Pakistan/test_results_to_enter"
+            },
+            {
+                "name": "womanBloodGroup",
+                "bind": "/model/instance/ANC_Investigations_Pakistan/w_blood_group"
+            },
+            {
+                "name": "rhIncompatibleCouple",
+                "bind": "/model/instance/ANC_Investigations_Pakistan/rh_incompatible_couple"
+            },
+            {
+                "name": "testsResultPositive",
+                "bind": "/model/instance/ANC_Investigations_Pakistan/tests_result_positive"
+            },
+            {
+                "name": "bileSalts",
+                "bind": "/model/instance/ANC_Investigations_Pakistan/bile_salts"
+            },
+            {
+                "name": "bilePigments",
+                "bind": "/model/instance/ANC_Investigations_Pakistan/bile_pigments"
+            },
+            {
+                "name": "submissionDate",
+                "bind": "/model/instance/ANC_Investigations_Pakistan/today"
+            }
+        ]
+    }
+}

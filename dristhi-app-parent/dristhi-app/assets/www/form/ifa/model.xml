@@ -1,0 +1,16 @@
+<model>
+    <instance>
+        <IFA_Pakistan id="IFA_Pakistan">
+          <formhub>
+            <uuid/>
+          </formhub>
+          <today/>
+          <ifa_tablets_given/>
+          <ifa_tablets_place/>
+          <ifa_tablets_date/>
+          <meta>
+            <instanceID/>
+          </meta>
+        </IFA_Pakistan>
+      </instance>
+  </model>

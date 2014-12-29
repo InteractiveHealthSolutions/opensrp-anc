@@ -1,0 +1,16 @@
+<model>
+    <instance>
+        <TT_Pakistan id="TT_Pakistan">
+          <formhub>
+            <uuid/>
+          </formhub>
+          <today/>
+          <tt_dose/>
+          <tt_injection_place/>
+          <tt_date/>
+          <meta>
+            <instanceID/>
+          </meta>
+        </TT_Pakistan>
+      </instance>
+  </model>
